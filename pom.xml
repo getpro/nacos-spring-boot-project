@@ -8,7 +8,7 @@
         <version>7</version>
     </parent>
     <properties>
-        <revision>0.2.10</revision>
+        <revision>0.2.11</revision>
         <maven_javadoc_version>3.0.1</maven_javadoc_version>
         <maven_surefire_version>2.19.1</maven_surefire_version>
         <maven-source-plugin.version>3.1.0</maven-source-plugin.version>
@@ -148,15 +148,30 @@
         </plugins>
     </build>
 
+    <repositories>
+        <repository>
+            <id>public</id>
+            <name>XSS Packages</name>
+            <url>https://packages.aliyun.com/maven/repository/2134770-release-zMDhDV</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
     <distributionManagement>
         <snapshotRepository>
-            <!-- 这里的ID一定要在maven setting文件中存在于server下的ID -->
-            <id>sona</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+            <id>rdc-snapshot</id>
+            <name>SNAPSHOT</name>
+            <url>https://packages.aliyun.com/maven/repository/2134770-snapshot-8KrMmS/</url>
         </snapshotRepository>
         <repository>
-            <id>sona</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+            <id>rdc-release</id>
+            <name>RELEASE</name>
+            <url>https://packages.aliyun.com/maven/repository/2134770-release-zMDhDV/</url>
         </repository>
     </distributionManagement>
 

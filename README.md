@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/nacos-group/nacos-spring-boot-project.svg?branch=master)](https://travis-ci.org/nacos-group/nacos-spring-boot-project)
 
+基于0.2.10版本修改，修复不支持SpringBoot2.4以上版本，目前SpringBoot版本 2.5.4
+
 [Alibaba Nacos](https://github.com/alibaba/nacos) ships main core features of Cloud-Native application, 
 including:
 
@@ -31,7 +33,7 @@ Nacos Spring Boot Project consist of two parts: `nacos-config-spring-boot` and `
 | Dependencies   | Compatibility |
 | -------------- | ------------- |
 | Java           | 1.8+         |
-| Spring Boot | 2.0.3.RELEASE         |
+| Spring Boot | 2.5.4         |
 | Nacos-Spring-Context | 1.1.0   |
 
 
